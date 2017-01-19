@@ -112,6 +112,11 @@ public class MainActivity extends AppCompatActivity  {
             //这里使用0表示一直可以被发现
             discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 0);
             startActivityForResult(discoverableIntent, REQUEST_DISCOVERABLE);
+        }else{
+            //如果能被发现，作为服务端的话，可以开启监听啦
+            if(mConnectManager!=null&&mConnectManager.getState()==ConnectManager.STATE_NONE){
+                mConnectManager.start();
+            }
         }
 
 
@@ -153,13 +158,7 @@ public class MainActivity extends AppCompatActivity  {
         });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if(mConnectManager!=null&&mConnectManager.getState()==ConnectManager.STATE_NONE){
-            mConnectManager.start();
-        }
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -210,11 +209,15 @@ public class MainActivity extends AppCompatActivity  {
                     return;
                 }
             case REQUEST_DISCOVERABLE:
-                if(resultCode!=RESULT_OK){
-                    Toast.makeText(this,"必须开启蓝牙才能玩此app",Toast.LENGTH_SHORT).show();
-                    finish();
-                    return;
+                if(resultCode==RESULT_CANCELED){
+                    Toast.makeText(this,"必须开启开放检测才能玩此app",Toast.LENGTH_SHORT).show();
+                }else if(resultCode==RESULT_OK){
+                    //能被发现，作为服务端的话，可以开启监听啦
+                    if(mConnectManager!=null&&mConnectManager.getState()==ConnectManager.STATE_NONE){
+                        mConnectManager.start();
+                    }
                 }
+                break;
             case GET_DEVICE:
                 if(resultCode==RESULT_OK){
                     String device_address=data.getStringExtra("device_address");
