@@ -56,11 +56,13 @@ public class DeviceListAdapter extends BaseAdapter {
         holder.tv_name.setText(TextUtils.isEmpty(device.getName())?"NoName":device.getName());
         holder.tv_address.setText(device.getAddress());
         return convertView;
+
     }
 
     public void add(BluetoothDevice device){
         mBluetoothDeviceList.add(device);
         notifyDataSetChanged();
+
     }
     public void clear(){
         mBluetoothDeviceList.clear();
