@@ -25,6 +25,7 @@ public class ChatListAdapter extends BaseAdapter {
     public ChatListAdapter(Context context) {
         mMessageList = new ArrayList<>();
         mContext = context;
+        
     }
 
     @Override
