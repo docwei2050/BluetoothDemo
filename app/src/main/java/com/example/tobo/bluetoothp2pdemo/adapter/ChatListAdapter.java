@@ -87,6 +87,7 @@ public class ChatListAdapter extends BaseAdapter {
             System.out.println("BBBBBBBBBBB");
             System.out.println("FFFFFFFFFFFFFFFFF");
             System.out.println("EEEEEEEEEEEEEEEEEEEEE");
+            System.out.println("RRRRRRRRRRRRRRRR");
         }
     }
 }
