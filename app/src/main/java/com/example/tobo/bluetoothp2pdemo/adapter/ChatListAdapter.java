@@ -85,6 +85,7 @@ public class ChatListAdapter extends BaseAdapter {
             ra_send= (RelativeLayout) view.findViewById(R.id.send);
             System.out.println("FFFFFFFFFFFFFFFFF");
             System.out.println("EEEEEEEEEEEEEEEEEEEEE");
+            System.out.println("ttttttttttttttttttttt");
         }
     }
 }
