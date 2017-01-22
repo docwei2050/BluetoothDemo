@@ -87,16 +87,10 @@ public class ChatListAdapter extends BaseAdapter {
             System.out.println("EEEEEEEEEEEEEEEEEEEEE");
             System.out.println("ttttttttttttttttttttt");
             System.out.println("ggggggggggggg");
+            System.out.println("我我我我我哦我");
+          
 
-            System.out.println("哈哈哈哈哈哈哈哈哈");
-            System.out.println("你你你你你你你你你");
-            System.out.println("我我我我我我我");
-            System.out.println("是是是是是是是是");
-            System.out.println("谁谁谁谁谁谁");
-            System.out.println("呢呢呢呢呢呢");
-            System.out.println("BUBUBUBUBUBU");
-            System.out.println("GAOGAOGAGOAGO");
-            System.out.println("NINININI");
+
 
         }
     }
