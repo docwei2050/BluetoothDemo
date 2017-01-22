@@ -24,10 +24,7 @@ public class ChatListAdapter extends BaseAdapter {
 
     public ChatListAdapter(Context context) {
         mMessageList = new ArrayList<>();
-
-
-
-        
+        //aaaaaaaa
         mContext = context;
     }
 
@@ -88,6 +85,8 @@ public class ChatListAdapter extends BaseAdapter {
             ra_send= (RelativeLayout) view.findViewById(R.id.send);
             System.out.println("还撒谎是否合适待发货单是粉红色的");
             System.out.println("BBBBBBBBBBB");
+            System.out.println("FFFFFFFFFFFFFFFFF");
+            System.out.println("EEEEEEEEEEEEEEEEEEEEE");
         }
     }
 }
