@@ -96,6 +96,7 @@ public class ChatListAdapter extends BaseAdapter {
             System.out.println("呢呢呢呢呢呢");
             System.out.println("BUBUBUBUBUBU");
             System.out.println("GAOGAOGAGOAGO");
+            System.out.println("NINININI");
 
         }
     }
