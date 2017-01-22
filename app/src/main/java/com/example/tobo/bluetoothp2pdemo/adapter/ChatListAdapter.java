@@ -86,6 +86,7 @@ public class ChatListAdapter extends BaseAdapter {
             tv_receive= (TextView) view.findViewById(R.id.tv_receive);
             ll_receive= ( LinearLayout) view.findViewById(R.id.receive);
             ra_send= (RelativeLayout) view.findViewById(R.id.send);
+            System.out.println("还撒谎是否合适待发货单是粉红色的");
         }
     }
 }
