@@ -83,12 +83,7 @@ public class ChatListAdapter extends BaseAdapter {
             tv_receive= (TextView) view.findViewById(R.id.tv_receive);
             ll_receive= ( LinearLayout) view.findViewById(R.id.receive);
             ra_send= (RelativeLayout) view.findViewById(R.id.send);
-            System.out.println("第二次");
-            System.out.println("第三次");
-
-
-
-
+            System.out.println("");
         }
     }
 }
