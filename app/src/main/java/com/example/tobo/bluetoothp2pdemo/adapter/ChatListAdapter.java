@@ -24,11 +24,11 @@ public class ChatListAdapter extends BaseAdapter {
 
     public ChatListAdapter(Context context) {
         mMessageList = new ArrayList<>();
-        //aaaaaaaa
-        System.out.println("2017123 第一次 ");
-        System.out.println("2017123 第二次 ");
-        System.out.println("2017123 第三次 ");
-        System.out.println("2017123 第四次 ");
+        System.out.println("diyici");
+        System.out.println("第二次");
+        System.out.println("第三次");
+        System.out.println("第四次");
+
         mContext = context;
     }
 
