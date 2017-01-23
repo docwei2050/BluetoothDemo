@@ -24,10 +24,7 @@ public class ChatListAdapter extends BaseAdapter {
 
     public ChatListAdapter(Context context) {
         mMessageList = new ArrayList<>();
-        System.out.println("diyici");
-        System.out.println("第二次");
-        System.out.println("第三次");
-        System.out.println("第四次");
+        souu
 
         mContext = context;
     }
